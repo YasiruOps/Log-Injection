@@ -10,7 +10,7 @@ attacker has initiated an attack they can sit inbetween and control the log mess
 In the user input (localhost:8080/vuln?userInput) where the user can enter their name an attacker can enter the following command
 URL encorded and submit it to look upto the hosts JNDI resouces and use it to connect to that
 
-**Mitigate **
+**Mitigate**
 
 We can mitigate this using JVM argument -DLog4j2.format.MsgNoLookups = true which makes sure it doesnt read 
 lookups and therefore this is mitigated also u can use better log4j version in order to mitigate this
